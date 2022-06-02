@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(53, 53, 53);
+    position: relative;
+    
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    z-index:1;
+}

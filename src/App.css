@@ -1,8 +1,8 @@
 body{
     background-color: rgb(53, 53, 53);
-    position: relative;
-    
+    position: relative;    
 }
+
 .wrapper{
     display: flex;
     justify-content: center;

@@ -1,15 +1,17 @@
 import React from "react";
-import { UserCardContainer } from "./elements.styled";
-import AddedUserCard from "./addedUserCard";
+import { UserCardContainer } from "../style/elements.styled";
+import { UserCard } from "../style/elements.styled";
 
-const AddedUserCardContainer = (props) => {
+const AddedUserCardContainer = ({ users }) => {
   return (
     <UserCardContainer>
-      {props.InputList.map((input) => {
-          return (
-            <AddedUserCard user={input.user} age={input.age}></AddedUserCard>
-          );
-        })}
+      {users.map((user, index) => (
+        <UserCard key={index}>
+          <h3 className="user-info">
+            {user.name} ({user.age} years old)
+          </h3>
+        </UserCard>
+      ))}
     </UserCardContainer>
   );
 };
